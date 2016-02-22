@@ -7,54 +7,35 @@
     <title>title</title>
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{% static 'css/jumbotron-narrow.css' %}" />    
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />    
 
   </head>
   <body>
-  	<div class="container">
-      <div class="header clearfix">
-        <nav>
+  	<div class="page-header">
+        <h1><a href="/">Salon Sweet: A Web Presence Made for You!</a></h1>
+    </div>
+        <nav class="navbar navbar-default">
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Register</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a href="/blog">Blog</a></li>
+            <li role="presentation"><a href="/contact">Contact</a></li>
+            <li role="presentation"><a href="/services">Services</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Mei Li</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>Mei Li</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
         </div>
 
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
 
       <footer class="footer">
         <p>&copy; 2016 Company, Inc.</p>

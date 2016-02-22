@@ -12,3 +12,17 @@ class Landing(TemplateView):
 		context = super(Landing, self).get_context_data(**kwargs)
 		return context
 
+
+class Contact(TemplateView):
+	template_name = "contact.html"
+
+	def get_context_data(self, **kwargs):
+		context = super(Contact, self).get_context_data(**kwargs)
+		return context
+
+class Services(TemplateView):
+	template_name = "services.html"
+
+	def get_context_data(self, **kwargs):
+		context = super(Services, self).get_context_data(**kwargs)
+		return context
