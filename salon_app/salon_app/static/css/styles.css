@@ -1,5 +1,8 @@
+
+/* Additional Sytles */
+
 .page-header {
-    background-color: #ff9400;
+    background-color: #333;
     margin-top: 0;
     padding: 20px 20px 0px 40px;
     margin-bottom: 0px;
@@ -7,7 +10,7 @@
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
-    font-size: 36pt;
+    font-size: 25pt;
     text-decoration: none;
 }
 
@@ -16,7 +19,7 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .date {
@@ -46,3 +49,7 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+
+
+

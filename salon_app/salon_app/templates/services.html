@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<h2>Prices</h2>
+<!-- <p> No matter which chair, city or shop you move to, you website can always be found in one place!</p>
+ -->
+<div class="row">
+<!-- Photo -->
+ <div class="col-md-7">
+<img class="services-pic" src="{% static 'img/under-dryer.jpg' %}" />
+ </div>
+
+<!-- Prices-->
+<div class="col-md-5">
+<h3>Consulting</h3>
+	<ul class="consulting-prices">
+		<li>Keeping your Site Secure</li>
+		<li>Internet Marketing and SEO</li>
+	</ul>
+<h3>Website</h3>
+	<ul class="website-prices">
+		<li>Building a commercial facebook page</li>
+		<li>Integrating Online Payment System</li>
+		<li>Building a Portfolio Website</li>
+		<li>Building a Custom Website</li>
+	</ul>
+<h3>Premium Services</h3>
+<ul class="premium-services">
+	<li>Build a Portfolio Website</li>
+	<li>Custom Ecommerce-site</li>
+</ul>
+	</div>
+</div>
+
+{% endblock %}
