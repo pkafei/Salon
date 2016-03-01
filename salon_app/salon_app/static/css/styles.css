@@ -23,6 +23,11 @@ h1, h2, h3, h4 {
 
 }
 
+.curlynerd {
+    font-weight: bolder;
+/*    color: #0000FC ;
+*/}
+
 .date {
     float: right;
     color: #828282;
@@ -58,7 +63,7 @@ h1, h2, h3, h4 {
 
 .navbar-default {
     background-image: none;
-    background-color: #d9edf7;
+    background-color: #DCDCDC;
 }
 
 /* Body Styles */
