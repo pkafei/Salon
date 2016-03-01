@@ -6,7 +6,7 @@ from django.shortcuts import render
 
 
 class Landing(TemplateView):
-	template_name = "index.html"
+	template_name = "landing.html"
 
 	def get_context_data(self, **kwargs):
 		context = super(Landing, self).get_context_data(**kwargs)
