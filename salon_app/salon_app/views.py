@@ -3,6 +3,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from django.shortcuts import render
+import blog.views
 
 
 class Landing(TemplateView):
@@ -13,11 +14,11 @@ class Landing(TemplateView):
 		return context
 
 
-class Contact(TemplateView):
-	template_name = "contact.html"
+class Register(TemplateView):
+	template_name = "register.html"
 
 	def get_context_data(self, **kwargs):
-		context = super(Contact, self).get_context_data(**kwargs)
+		context = super(Register, self).get_context_data(**kwargs)
 		return context
 
 class Services(TemplateView):
