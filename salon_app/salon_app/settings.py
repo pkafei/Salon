@@ -25,9 +25,9 @@ PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 SECRET_KEY = 'v*n+*4ded8-7xakeeo311i3n(j&ee%1h24!2k-)))%-*=@h4=b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
 
-ALLOWED_HOSTS = ['45.56.110.159']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -85,9 +85,24 @@ DATABASES = {
         'USER': 'portiaburton',
         'PASSWORD': 'root',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
+
+
+# Security
+
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+SECURE_BROWSER_XSS_FILTER = True
+
+SESSION_COOKIE_SECURE = True
+
+CSRF_COOKIE_SECURE = True
+
+CSRF_COOKIE_HTTPONLY = True
+
+X_FRAME_OPTIONS = 'DENY' 
 
 
 # Internationalization
