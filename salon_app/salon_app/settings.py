@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'salon_app',
+    'tinymce',
 )
 
 MIDDLEWARE_CLASSES = (
